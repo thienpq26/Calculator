@@ -21,7 +21,6 @@ class DisplayFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_display, container, false)
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -32,7 +31,6 @@ class DisplayFragment : Fragment() {
         if (result != null) {
             text_one.text = result
         }
-
     }
 
     fun setTextDisplay(message: String, type: Boolean) {
@@ -111,14 +109,12 @@ class DisplayFragment : Fragment() {
         } catch (e: Exception) {
             Log.d("d", "msg_exception: " + e.message)
         }
-
     }
 
     fun setAC() {
         text_one.text = ""
         text_two.text = ""
         text_three.text = ""
-
     }
 
     fun saveResult() {
@@ -128,6 +124,6 @@ class DisplayFragment : Fragment() {
         val editor: SharedPreferences.Editor = sharedPreferences.edit()
         editor.putString("result", result)
         editor.commit()
-
     }
 }
+

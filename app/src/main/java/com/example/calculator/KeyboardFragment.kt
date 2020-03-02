@@ -65,6 +65,6 @@ class KeyboardFragment : Fragment() {
     override fun onDetach() {
         super.onDetach()
         listener = null
-
     }
 }
+
