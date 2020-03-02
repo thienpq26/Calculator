@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#645B5B"
-    tools:context=".Fragment_Display">
+    android:background="@color/color_background_display"
+    tools:context=".DisplayFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -22,7 +22,7 @@
         app:layout_constraintGuide_percent="0.6" />
 
     <TextView
-        android:id="@+id/txtThree"
+        android:id="@+id/text_three"
         style="@style/TextView12"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtTwo"
+        android:id="@+id/text_two"
         style="@style/TextView12"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txtOne"
+        android:id="@+id/text_one"
         style="@style/TextView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
